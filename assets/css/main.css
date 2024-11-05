@@ -13,10 +13,10 @@ html::-webkit-scrollbar-thumb {
 }
 /* Gestion Contenu */
 .rm-wrapper {
-  @apply flex justify-start items-center space-x-4 relative bg-black;
+  @apply flex justify-start items-center space-x-4 relative;
 }
 .rm-container {
-  @apply max-w-6xl mx-auto px-6 sm:px-2 w-full bg-black;
+  @apply max-w-6xl mx-auto px-6 sm:px-2 w-full;
 }
 .fade-enter-active,
 .fade-leave-active {
