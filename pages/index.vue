@@ -28,7 +28,7 @@
         v-for="(person, index) in people"
         :key="index"
         :class="[
-          'relative bg-gradient-to-b from-transparent to-yellow-600 w-40 h-60 md:w-60 md:h-80 overflow-hidden m-2 transform transition-transform duration-500 hover:scale-105 hover:shadow-lg',
+          'relative bg-gradient-to-b from-transparent to-yellow-400 w-40 h-60 md:w-60 md:h-80 overflow-hidden m-2 transform transition-transform duration-500 hover:scale-105 hover:shadow-lg',
           index === 0 || index === 2
             ? '-translate-y-4 sm:-translate-y-6 md:-translate-y-8'
             : '',
@@ -41,7 +41,7 @@
         />
         <div class="absolute bottom-0 p-4 text-left text-white">
           <h2
-            class="text-lg md:text-xl font-semibold hover:underline hover:text-yellow-400 transition duration-300"
+            class="text-lg md:text-xl font-semibold hover:underline hover:text-yellow-300 transition duration-300"
           >
             {{ person.name }}
           </h2>
@@ -66,7 +66,7 @@
     <!-- Bouton Spotify -->
     <div class="mt-10">
       <button
-        class="bg-yellow-600 text-black px-6 py-3 rounded-full font-semibold flex items-center space-x-2 transform transition-transform duration-300 hover:scale-105 hover:bg-yellow-500"
+        class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold flex items-center space-x-2 transform transition-transform duration-300 hover:scale-105 hover:bg-yellow-500"
       >
         <img src="assets/img/spotify.png" alt="Spotify Icon" class="h-5 w-5" />
         <span>Connect Spotify</span>
