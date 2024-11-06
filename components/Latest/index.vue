@@ -7,15 +7,24 @@
       <div
         class="flex items-center justify-between border-b border-gray-200 py-4"
       >
-        <h2 class="text-xl sm:text-2xl font-bold text-yellow-500">
+        <h2
+          class="text-xl sm:text-2xl font-bold text-yellow-500 transform transition duration-200 hover:scale-105"
+        >
           Latest Music
         </h2>
+
+        <!-- Ligne séparatrice centrée avec décalage vers le bouton -->
+        <div
+          class="w-1/3 sm:w-[35%] border-t border-gray-300 ml-4 mr-1 hidden sm:block"
+        ></div>
+
         <button
-          class="border border-yellow-400 text-yellow-500 px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm font-medium hover:bg-yellow-50 transition duration-200"
+          class="border border-yellow-400 text-yellow-500 px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm font-medium hover:bg-yellow-50 transform transition duration-200 hover:scale-105"
         >
           Voir Tout
         </button>
       </div>
+
       <!-- Fin Section Header -->
 
       <!-- Liste des cards -->
@@ -137,8 +146,6 @@
     </div>
   </section>
 </template>
-
-
 <script setup>
 import pub1 from "../assets/img/a1.png";
 import pub2 from "../assets/img/a2.png";

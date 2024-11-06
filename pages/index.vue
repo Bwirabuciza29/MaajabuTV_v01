@@ -38,7 +38,7 @@
           <img
             :src="person.image"
             :alt="person.name"
-            class="w-full h-full object-cover opacity-75"
+            class="w-full h-full object-cover opacity-75 transition-all duration-300 hover:scale-110"
           />
           <div class="absolute bottom-0 p-4 text-left text-white">
             <h2
