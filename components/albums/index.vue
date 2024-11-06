@@ -16,97 +16,111 @@
         ></div>
       </div>
       <!-- Fin Section Header -->
+
+      <div class="flex items-start gap-6 justify-between flex-wrap">
+        <!-- Cards Section -->
+        <div class="flex gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white w-48 md:w-56 shadow-md overflow-hidden">
+            <img
+              src="assets/img/e1.png"
+              alt="Psaumes"
+              class="w-full h-52 object-cover transition-all duration-300 hover:scale-110 hover:z-10 hover:shadow-lg"
+            />
+            <div class="p-3">
+              <h3 class="text-md font-semibold">PSAUMES</h3>
+              <p class="text-gray-500 text-sm">Story Life • 102 Podcast</p>
+              <p class="text-gray-500 text-sm">535K Followers</p>
+            </div>
+            <div>
+              <button
+                class="mt-3 bg-black text-yellow-500 px-3 py-1.5 w-full text-sm hover:bg-yellow-500 hover:text-black hover:text-base transform transition duration-300 ease-in-out"
+              >
+                FOLLOWED
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white w-48 md:w-56 shadow-md overflow-hidden">
+            <img
+              src="assets/img/e2.png"
+              alt="Dayly Artist"
+              class="w-full h-52 object-cover transition-all duration-300 hover:scale-110 hover:z-10 hover:shadow-lg"
+            />
+            <div class="p-3">
+              <h3 class="text-md font-semibold">DAYLY ARTIST</h3>
+              <p class="text-gray-500 text-sm">Rimance • 94 Podcast</p>
+              <p class="text-gray-500 text-sm">412K Followers</p>
+            </div>
+            <div>
+              <button
+                class="mt-3 bg-white border border-black text-black px-3 py-1.5 w-full text-sm hover:bg-black hover:text-white hover:text-base transform transition duration-300 ease-in-out"
+              >
+                FOLLOW
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white w-48 md:w-56 shadow-md overflow-hidden">
+            <img
+              src="assets/img/e3.jpeg"
+              alt="Faveur Mukoko"
+              class="w-full h-52 object-cover transition-all duration-300 hover:scale-110 hover:z-10 hover:shadow-lg"
+            />
+            <div class="p-3">
+              <h3 class="text-md font-semibold">AMOUR INCONDITIONNEL</h3>
+              <p class="text-gray-500 text-sm">Comedy • 152 Podcast</p>
+              <p class="text-gray-500 text-sm">389 Followers</p>
+            </div>
+            <div>
+              <button
+                class="mt-3 bg-white border border-black text-black px-3 py-1.5 w-full text-sm hover:bg-black hover:text-white hover:text-base transform transition duration-300 ease-in-out"
+              >
+                FOLLOW
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description & Navigation Section -->
+        <div class="flex flex-col justify-center text-center ml-4">
+          <h2 class="text-2xl font-bold text-yellow-600">Top Albums</h2>
+          <div class="text-black mt-2 space-y-1">
+            <p>Here are the podcasters</p>
+
+            <p>with the highest followers</p>
+
+            <p>and viewers. Immediately follow</p>
+            <p>to follow the podcast</p>
+          </div>
+          <div class="mt-36 flex items-center gap-2 justify-center flex-wrap">
+            <!-- Trois petites images ajoutées avant les boutons -->
+
+            <!-- Boutons de navigation -->
+            <button
+              class="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 bg-gray-200 flex items-center justify-center object-cover transition-all duration-300 hover:scale-110 hover:z-10 hover:shadow-lg"
+            >
+              <img
+                src="public/img/Arrow - Left.png"
+                alt="Flèche gauche"
+                class="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6"
+              />
+            </button>
+
+            <button
+              class="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 bg-yellow-500 flex items-center justify-center object-cover transition-all duration-300 hover:scale-110 hover:z-10 hover:shadow-lg"
+            >
+              <img
+                src="public/img/Arrow - Right.png"
+                alt="Flèche droite"
+                class="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Fin titre -->
   </section>
 </template>
-<script setup>
-import pub1 from "../assets/img/a1.png";
-import pub2 from "../assets/img/a2.png";
-import pub3 from "../assets/img/a3.png";
-
-const episodes = ref([
-  {
-    id: 1,
-    artist: "SHEKINAH MPIANA",
-    duration: "46 min",
-    episode: 10,
-    title: "Désormais",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac neque sagittis...",
-    image: pub1,
-    stats: {
-      listen: "8.9K",
-      likes: "2.1K",
-      comments: "982K",
-      downloads: "284K",
-    },
-  },
-  {
-    id: 2,
-    artist: "LORD LOMBO",
-    duration: "34 min",
-    episode: 9,
-    title: "CELEBRONS HEBRON AUJOURD'HUI",
-    description:
-      "Quisque sit amet lacus luctus, ultrices eros ac, laoreet sem...",
-    image: pub2,
-    stats: {
-      listen: "24K",
-      likes: "3.2K",
-      comments: "5.6K",
-      downloads: "1.9K",
-    },
-  },
-  {
-    id: 3,
-    artist: "FAVEUR MUKOKO",
-    duration: "46 min",
-    episode: 8,
-    title: "Hakuniacaha",
-    description:
-      "Cras facilisis orci in arcu ullamcorper viverra. Maecenas vulputate risus...",
-    image: pub3,
-    stats: {
-      listen: "42K",
-      likes: "10K",
-      comments: "16K",
-      downloads: "5.1K",
-    },
-  },
-]);
-</script>
-
-
-<style scoped>
-.container {
-  max-width: 640px;
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (max-width: 768px) {
-  h2 {
-    font-size: 1.25rem;
-  }
-  .music-card {
-    flex-direction: column;
-    text-align: center;
-  }
-  .music-card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-  .music-card .stats {
-    justify-content: center;
-  }
-}
-</style>
