@@ -2,19 +2,20 @@
   <footer class="bg-black text-gray-400 py-8">
     <div class="max-w-6xl mx-auto">
       <hr class="mb-8 -mt-8 bg-white" />
-      <div class="flex justify-between flex-wrap">
+      <div class="flex flex-col md:flex-row justify-between">
         <!-- Logo Section -->
-        <div class="w-full md:w-1/4 mb-4 md:mb-0">
-          <div class="flex flex-col items-start">
-            <img
-              src="/assets/img/logo.png"
-              alt="Maajabu TV"
-              class="mb-2 h-24 w-auto"
-            />
-          </div>
+        <div class="w-full md:w-1/4 mb-4 md:mb-0 flex flex-col items-start">
+          <img
+            src="/assets/img/logo.png"
+            alt="Maajabu TV"
+            class="mb-2 h-24 w-auto"
+          />
         </div>
-        <div class="flex flex-cols-4 space-x-2">
-          <div class="w-full md:w-1/4 mb-4 md:mb-0 pr-4">
+
+        <!-- Links Section avec Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 w-full">
+          <!-- Product Links -->
+          <div>
             <h4 class="text-yellow-400 font-semibold mb-2 text-sm">Product</h4>
             <ul class="space-y-1">
               <li>
@@ -32,7 +33,8 @@
             </ul>
           </div>
 
-          <div class="w-full md:w-1/4 mb-4 md:mb-0 pr-4">
+          <!-- Company Links -->
+          <div>
             <h4 class="text-yellow-400 font-semibold mb-2 text-sm">Company</h4>
             <ul class="space-y-1">
               <li>
@@ -50,7 +52,8 @@
             </ul>
           </div>
 
-          <div class="w-full md:w-1/4 mb-4 md:mb-0 pr-4">
+          <!-- Support Links -->
+          <div>
             <h4 class="text-yellow-400 font-semibold mb-2 text-sm">Support</h4>
             <ul class="space-y-1">
               <li>
@@ -72,7 +75,8 @@
             </ul>
           </div>
 
-          <div class="w-full md:w-1/4 pr-4">
+          <!-- Other Links -->
+          <div>
             <h4 class="text-yellow-400 font-semibold mb-2 text-sm">Other</h4>
             <ul class="space-y-1">
               <li>
@@ -94,13 +98,11 @@
             </ul>
           </div>
         </div>
-        <!-- Links Section -->
       </div>
-
-      <!-- Bottom Section -->
     </div>
   </footer>
 </template>
+
 <style scoped>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 </style>
