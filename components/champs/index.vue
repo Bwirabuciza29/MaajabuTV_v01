@@ -9,7 +9,7 @@
           class="w-1/3 sm:w-[35%] border-t border-gray-300 ml-4 mr-1 hidden sm:block"
         ></div>
         <h2
-          class="text-xl sm:text-2xl font-bold text-yellow-500 transform transition duration-200 hover:scale-105"
+          class="text-xl sm:text-3xl font-bold text-yellow-500 transform transition duration-200 hover:scale-105"
         >
           Plus qu'un champs
         </h2>
@@ -19,6 +19,7 @@
       </div>
       <!-- Fin Section Header -->
     </div>
+    <!-- Fin titre -->
     <div class="flex flex-cols-3 justify-between md:space-x-2 p-4 md:space-y-0">
       <!-- Musics cards -->
       <div class="relative h-96 overflow-hidden">
@@ -37,7 +38,7 @@
       </div>
 
       <!-- Deuxième ligne avec 3 cartes -->
-      <div class="flex flex-wrap w-full md:w-1/3 space-y-4 md:space-y-0">
+      <div class="flex flex-wrap w-full md:w-1/3 space-y-2 md:space-y-0">
         <div class="relative w-full h-48 overflow-hidden">
           <img
             src="assets/img/c2.jpg"
@@ -53,7 +54,7 @@
           </div>
         </div>
 
-        <div class="flex space-x-4 w-full">
+        <div class="flex space-x-2 w-full">
           <!-- Story Life -->
           <div class="relative w-1/2 h-48 overflow-hidden">
             <img
@@ -104,7 +105,11 @@
           </div>
         </div>
         <button class="bg-black text-yellow-500 font-semibold px-4 py-3">
-          Afficher plus de catégorie
+          <span
+            class="hover:text-yellow-200 transition duration-300 hover:scale-110"
+          >
+            Afficher plus de catégorie</span
+          >
         </button>
       </div>
     </div>
