@@ -182,17 +182,15 @@ const episodes = ref([
 /* Responsive grid */
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr; /* Full-width for mobile */
+    grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* Carte à droite avec un bouton */
 .relative {
   display: flex;
   flex-direction: column;
@@ -202,15 +200,11 @@ const episodes = ref([
 
 button {
   width: 100%;
-  margin-top: 1rem; /* espace entre la carte et le bouton */
+  margin-top: 1rem;
 }
-
-/* Flexibilité de la carte à droite */
 .relative .flex-1 {
-  flex: 1 1 90%; /* 90% de la hauteur pour la carte */
+  flex: 1 1 90%;
 }
-
-/* Card Alignments */
 h2,
 p {
   text-align: center;
