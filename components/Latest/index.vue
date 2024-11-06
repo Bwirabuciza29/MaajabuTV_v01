@@ -25,77 +25,55 @@
             Voir Tout
           </button>
         </div>
-
-        <!-- Fin Section Header -->
+        <!-- Section Musics -->
         <div class="py-6 space-y-8">
           <div
             v-for="episode in episodes"
             :key="episode.id"
             class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-4 border-b pb-4"
           >
-            <!-- Image de l'album (prend toute la largeur sur mobile) -->
             <img
               :src="episode.image"
               alt="Album cover"
               class="w-full h-64 sm:h-80 md:w-40 md:h-40 object-cover transition-transform duration-300 hover:scale-105"
             />
-
-            <!-- Informations de l'épisode -->
-            <div class="flex-1 mt-4 md:mt-0">
-              <!-- Titre -->
+            <div class="flex-1 mt-4 md:mt-0 text-center md:text-left">
               <h3
                 class="text-base sm:text-lg font-semibold hover:text-yellow-500 hover:underline hover:translate-y-[-3px] transition-all duration-300"
               >
                 {{ episode.title }}
               </h3>
-
-              <!-- Description -->
               <p
                 class="text-gray-600 mt-1 text-xs sm:text-sm hover:text-yellow-500 hover:underline hover:translate-y-[-3px] transition-all duration-300"
               >
                 {{ episode.description }}
               </p>
-
-              <!-- Statistiques de l'épisode (les icônes alignées horizontalement) -->
               <div
-                class="flex flex-wrap items-center space-x-4 mt-3 text-gray-400"
+                class="grid grid-cols-4 gap-4 mt-3 text-gray-400 sm:grid-cols-4 sm:space-x-1 md:space-x-1 md:flex md:text-left"
               >
                 <div class="flex items-center space-x-2">
-                  <img
-                    src="assets/img/icons/Headphones.svg"
-                    alt="Headphones"
-                    class="w-5 h-5"
-                  />
+                  <i class="fas fa-headphones w-5 h-5"></i>
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.listen
                   }}</span>
                 </div>
+
                 <div class="flex items-center space-x-2">
-                  <img
-                    src="assets/img/icons/fi_heart.svg"
-                    alt="heart"
-                    class="w-5 h-5"
-                  />
+                  <i class="fas fa-heart w-5 h-5"></i>
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.likes
                   }}</span>
                 </div>
+
                 <div class="flex items-center space-x-2">
-                  <img
-                    src="assets/img/icons/Chat.svg"
-                    alt="comment"
-                    class="w-5 h-5"
-                  />
+                  <i class="fas fa-comment w-5 h-5"></i>
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.comments
                   }}</span>
                 </div>
+
                 <div class="flex items-center space-x-2">
-                  <img
-                    src="assets/img/icons/fi_download.svg"
-                    alt="download"
-                    class="w-5 h-5"
-                  />
+                  <i class="fas fa-download w-5 h-5"></i>
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.downloads
                   }}</span>
@@ -116,7 +94,6 @@
           </div>
         </div>
 
-        <!-- View More Button -->
         <div class="mt-6 text-center">
           <button
             class="relative inline-block px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base font-semibold text-yellow-400 bg-black border-2 border-black overflow-hidden group"
@@ -131,8 +108,6 @@
             ></div>
           </button>
         </div>
-
-        <!-- Liste des cards -->
       </div>
     </div>
   </div>
