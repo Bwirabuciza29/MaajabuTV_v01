@@ -3,11 +3,15 @@
   <div
     class="flex items-center justify-center bg-pattern bg-cover bg-center p-4"
   >
-    <div class="text-center text-yellow-300 p-8 rounded-lg max-w-md w-full">
-      <h1 class="text-3xl font-bold mb-4">
+    <div class="text-center text-yellow-500 p-8 rounded-lg max-w-md w-full">
+      <h1
+        class="text-3xl font-bold mb-4 transform transition duration-200 hover:scale-105 hover:text-yellow-500 hover:underline"
+      >
         Nouvel épisode<br />chaque semaine
       </h1>
-      <p class="text-gray-300 mb-6">
+      <p
+        class="text-gray-300 mb-6 transform transition duration-200 hover:scale-105"
+      >
         Les dernières mises à jour directement dans votre boîte de réception.
       </p>
       <div class="relative max-w-lg mx-auto">

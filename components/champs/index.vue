@@ -7,7 +7,7 @@
           class="w-1/3 sm:w-[35%] border-t border-gray-300 ml-4 mr-1 hidden sm:block"
         ></div>
         <h2
-          class="text-xl sm:text-3xl font-bold text-yellow-500 transform transition duration-200 hover:scale-105"
+          class="text-xl sm:text-3xl font-bold text-yellow-600 transform transition duration-200 hover:scale-105"
         >
           Plus qu'un champs
         </h2>

@@ -52,28 +52,36 @@
                 class="grid grid-cols-4 gap-4 mt-3 text-gray-400 sm:grid-cols-4 sm:space-x-1 md:space-x-1 md:flex md:text-left"
               >
                 <div class="flex items-center space-x-2">
-                  <i class="fas fa-headphones w-5 h-5"></i>
+                  <i
+                    class="fas fa-headphones w-5 h-5 transition-transform duration-300 hover:text-yellow-500 hover:scale-110"
+                  ></i>
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.listen
                   }}</span>
                 </div>
 
                 <div class="flex items-center space-x-2">
-                  <i class="fas fa-heart w-5 h-5"></i>
+                  <i
+                    class="fas fa-heart w-5 h-5 transition-transform duration-300 hover:text-red-500 hover:scale-110"
+                  ></i>
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.likes
                   }}</span>
                 </div>
 
                 <div class="flex items-center space-x-2">
-                  <i class="fas fa-comment w-5 h-5"></i>
+                  <i
+                    class="fas fa-comment w-5 h-5 transition-transform duration-300 hover:text-blue-500 hover:scale-110"
+                  ></i>
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.comments
                   }}</span>
                 </div>
 
                 <div class="flex items-center space-x-2">
-                  <i class="fas fa-download w-5 h-5"></i>
+                  <i
+                    class="fas fa-download w-5 h-5 transition-transform duration-300 hover:text-green-500 hover:scale-110"
+                  ></i>
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.downloads
                   }}</span>
@@ -104,7 +112,7 @@
               Voir plus des singles
             </span>
             <div
-              class="absolute inset-0 w-full h-full bg-yellow-300 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
+              class="absolute inset-0 w-full h-full bg-yellow-500 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
             ></div>
           </button>
         </div>

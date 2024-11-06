@@ -22,14 +22,14 @@
         <div class="flex flex-wrap gap-6 justify-center">
           <!-- Card 1 -->
           <div
-            class="bg-white w-full sm:w-48 md:w-56 shadow-md overflow-hidden"
+            class="bg-white w-full sm:w-48 md:w-56 shadow-md overflow-hidden transform transition duration-200 hover:scale-105 hover:text-yellow-500 hover:underline"
           >
             <img
               src="assets/img/e1.png"
               alt="Psaumes"
-              class="w-full h-52 object-cover transition-all duration-300 hover:scale-110 hover:z-10 hover:shadow-lg"
+              class="w-full h-52 object-cover"
             />
-            <div class="p-3">
+            <div class="p-3 transform transition duration-200 hover:scale-105">
               <h3 class="text-md font-semibold">PSAUMES</h3>
               <p class="text-gray-500 text-sm">Story Life • 102 Podcast</p>
               <p class="text-gray-500 text-sm">535K Followers</p>
@@ -45,14 +45,14 @@
 
           <!-- Card 2 -->
           <div
-            class="bg-white w-full sm:w-48 md:w-56 shadow-md overflow-hidden"
+            class="bg-white w-full sm:w-48 md:w-56 shadow-md overflow-hidden transform transition duration-200 hover:scale-105 hover:text-yellow-500 hover:underline"
           >
             <img
               src="assets/img/e2.png"
               alt="Dayly Artist"
-              class="w-full h-52 object-cover transition-all duration-300 hover:scale-110 hover:z-10 hover:shadow-lg"
+              class="w-full h-52 object-cover"
             />
-            <div class="p-3">
+            <div class="p-3 transform transition duration-200 hover:scale-105">
               <h3 class="text-md font-semibold">DAYLY ARTIST</h3>
               <p class="text-gray-500 text-sm">Rimance • 94 Podcast</p>
               <p class="text-gray-500 text-sm">412K Followers</p>
@@ -68,7 +68,7 @@
 
           <!-- Card 3 -->
           <div
-            class="bg-white w-full sm:w-48 md:w-56 shadow-md overflow-hidden"
+            class="bg-white w-full sm:w-48 md:w-56 shadow-md overflow-hidden transform transition duration-200 hover:scale-105 hover:text-yellow-500 hover:underline"
           >
             <img
               src="assets/img/e3.jpeg"
@@ -93,7 +93,11 @@
         <!-- Description & Navigation Section -->
         <!-- Description & Navigation Section -->
         <div class="flex flex-col justify-center text-center mt-8 sm:mt-0">
-          <h2 class="text-2xl font-bold text-yellow-600">Top Albums</h2>
+          <h2
+            class="text-2xl font-bold text-yellow-500 transform transition duration-200 hover:scale-105 hover:text-yellow-500 hover:underline"
+          >
+            Top Albums
+          </h2>
           <div class="text-black mt-2 space-y-1">
             <p>Here are the podcasters</p>
             <p>with the highest followers</p>
