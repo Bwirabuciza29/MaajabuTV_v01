@@ -19,9 +19,11 @@
 
       <div class="flex items-start gap-6 justify-between flex-wrap">
         <!-- Cards Section -->
-        <div class="flex gap-6">
+        <div class="flex flex-wrap gap-6 justify-center">
           <!-- Card 1 -->
-          <div class="bg-white w-48 md:w-56 shadow-md overflow-hidden">
+          <div
+            class="bg-white w-full sm:w-48 md:w-56 shadow-md overflow-hidden"
+          >
             <img
               src="assets/img/e1.png"
               alt="Psaumes"
@@ -42,7 +44,9 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-white w-48 md:w-56 shadow-md overflow-hidden">
+          <div
+            class="bg-white w-full sm:w-48 md:w-56 shadow-md overflow-hidden"
+          >
             <img
               src="assets/img/e2.png"
               alt="Dayly Artist"
@@ -63,7 +67,9 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="bg-white w-48 md:w-56 shadow-md overflow-hidden">
+          <div
+            class="bg-white w-full sm:w-48 md:w-56 shadow-md overflow-hidden"
+          >
             <img
               src="assets/img/e3.jpeg"
               alt="Faveur Mukoko"

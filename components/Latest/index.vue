@@ -27,37 +27,24 @@
         </div>
 
         <!-- Fin Section Header -->
-
-        <!-- Liste des cards -->
         <div class="py-6 space-y-8">
           <div
             v-for="episode in episodes"
             :key="episode.id"
             class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-4 border-b pb-4"
           >
-            <!-- Image de l'album -->
+            <!-- Image de l'album (prend toute la largeur sur mobile) -->
             <img
               :src="episode.image"
               alt="Album cover"
-              class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-cover transition-transform duration-300 hover:scale-105"
+              class="w-full h-64 sm:h-80 md:w-40 md:h-40 object-cover transition-transform duration-300 hover:scale-105"
             />
 
             <!-- Informations de l'épisode -->
-            <div class="flex-1">
-              <!-- Conteneur avec hover global sur tout le texte -->
-              <div
-                class="text-xs sm:text-sm text-gray-500 flex flex-wrap items-center space-x-1 hover:text-yellow-500 hover:underline hover:translate-y-[-3px] transition-all duration-300"
-              >
-                <span>{{ episode.artist }}</span>
-                <span class="mx-1 hidden sm:inline">•</span>
-                <span>{{ episode.duration }}</span>
-                <span class="mx-1 hidden sm:inline">•</span>
-                <span>Episode {{ episode.episode }}</span>
-              </div>
-
+            <div class="flex-1 mt-4 md:mt-0">
               <!-- Titre -->
               <h3
-                class="text-base sm:text-lg font-semibold mt-1 hover:text-yellow-500 hover:underline hover:translate-y-[-3px] transition-all duration-300"
+                class="text-base sm:text-lg font-semibold hover:text-yellow-500 hover:underline hover:translate-y-[-3px] transition-all duration-300"
               >
                 {{ episode.title }}
               </h3>
@@ -69,45 +56,45 @@
                 {{ episode.description }}
               </p>
 
-              <!-- Statistiques de l'épisode -->
+              <!-- Statistiques de l'épisode (les icônes alignées horizontalement) -->
               <div
-                class="flex flex-wrap items-center space-x-3 text-gray-400 mt-3"
+                class="flex flex-wrap items-center space-x-4 mt-3 text-gray-400"
               >
-                <div class="flex items-center space-x-1 sm:space-x-2">
+                <div class="flex items-center space-x-2">
                   <img
                     src="assets/img/icons/Headphones.svg"
                     alt="Headphones"
-                    class="w-4 h-4 sm:w-5 sm:h-5"
+                    class="w-5 h-5"
                   />
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.listen
                   }}</span>
                 </div>
-                <div class="flex items-center space-x-1 sm:space-x-2">
+                <div class="flex items-center space-x-2">
                   <img
                     src="assets/img/icons/fi_heart.svg"
                     alt="heart"
-                    class="w-4 h-4 sm:w-5 sm:h-5"
+                    class="w-5 h-5"
                   />
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.likes
                   }}</span>
                 </div>
-                <div class="flex items-center space-x-1 sm:space-x-2">
+                <div class="flex items-center space-x-2">
                   <img
                     src="assets/img/icons/Chat.svg"
                     alt="comment"
-                    class="w-4 h-4 sm:w-5 sm:h-5"
+                    class="w-5 h-5"
                   />
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.comments
                   }}</span>
                 </div>
-                <div class="flex items-center space-x-1 sm:space-x-2">
+                <div class="flex items-center space-x-2">
                   <img
                     src="assets/img/icons/fi_download.svg"
                     alt="download"
-                    class="w-4 h-4 sm:w-5 sm:h-5"
+                    class="w-5 h-5"
                   />
                   <span class="text-xs sm:text-sm">{{
                     episode.stats.downloads
@@ -144,6 +131,8 @@
             ></div>
           </button>
         </div>
+
+        <!-- Liste des cards -->
       </div>
     </div>
   </div>
@@ -206,37 +195,3 @@ const episodes = ref([
 </script>
 
 
-<style scoped>
-.container {
-  max-width: 640px; /* Limite la largeur pour la responsivité */
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  h2 {
-    font-size: 1.25rem;
-  }
-  .music-card {
-    flex-direction: column;
-    text-align: center;
-  }
-  .music-card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-  .music-card .stats {
-    justify-content: center;
-  }
-}
-</style>
