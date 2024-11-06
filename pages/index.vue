@@ -85,6 +85,13 @@
     <div>
       <champs />
     </div>
+
+    <div class="bg-black">
+      <brands />
+    </div>
+    <div>
+      <champs />
+    </div>
   </div>
 </template>
 
