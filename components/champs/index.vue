@@ -97,7 +97,7 @@
             class="object-cover w-full h-full transition-all duration-300 hover:scale-110 hover:z-10 hover:shadow-lg"
           />
           <div
-            class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 text-white backdrop-blur-md hover:bg-yellow-500 hover:text-black"
+            class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 text-white backdrop-blur-md"
             style="top: 80%"
           >
             <h2 class="text-xl font-semibold">Music</h2>
