@@ -24,7 +24,6 @@
         </button>
       </div>
     </div>
-    <hr class="border border-gray-200" />
   </div>
 </template>
 
