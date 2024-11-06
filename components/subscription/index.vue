@@ -13,7 +13,7 @@
       <div class="relative max-w-lg mx-auto">
         <input
           type="text"
-          class="w-full bg-black py-4 pl-3 pr-16 border border-gray-300 focus:outline-none focus:ring-2"
+          class="w-full bg-black py-4 pl-3 pr-16 border border-gray-300"
           placeholder="Entrez du texte"
         />
         <button
