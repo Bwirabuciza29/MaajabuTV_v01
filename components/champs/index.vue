@@ -18,8 +18,10 @@
       <!-- Fin Section Header -->
     </div>
     <!-- Fin titre -->
-    <div class="flex flex-cols-3 justify-between md:space-x-2 p-4 md:space-y-0">
-      <!-- Musics cards -->
+
+    <!-- Grille de cartes -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+      <!-- Carte à gauche -->
       <div class="relative h-96 overflow-hidden">
         <img
           src="assets/img/c1.jpeg"
@@ -35,9 +37,10 @@
         </div>
       </div>
 
-      <!-- Deuxième ligne avec 3 cartes -->
-      <div class="flex flex-wrap w-full md:w-1/3 space-y-2 md:space-y-0">
-        <div class="relative w-full h-48 overflow-hidden">
+      <!-- Carte centrale avec 3 cartes -->
+      <div class="flex flex-col justify-between space-y-4">
+        <!-- Carte du haut -->
+        <div class="relative h-48 overflow-hidden">
           <img
             src="assets/img/c2.jpg"
             alt="Clip du jours"
@@ -52,7 +55,8 @@
           </div>
         </div>
 
-        <div class="flex space-x-2 w-full">
+        <!-- Carte du bas -->
+        <div class="flex space-x-2">
           <!-- Story Life -->
           <div class="relative w-1/2 h-48 overflow-hidden">
             <img
@@ -86,9 +90,9 @@
         </div>
       </div>
 
-      <!-- Troisième ligne avec une carte et un bouton -->
-      <div class="flex flex-col w-full md:w-1/3 space-y-4">
-        <div class="relative h-96 overflow-hidden">
+      <!-- Carte à droite avec un bouton -->
+      <div class="relative h-96 flex flex-col">
+        <div class="flex-1 relative overflow-hidden">
           <img
             src="assets/img/c5.jpeg"
             alt="Music"
@@ -102,17 +106,21 @@
             <p class="text-sm">70 CHANNELS</p>
           </div>
         </div>
-        <button class="bg-black text-yellow-500 font-semibold px-4 py-3">
+        <!-- Le bouton sous la carte -->
+        <button
+          class="bg-black text-yellow-500 font-semibold px-4 py-3 mt-auto"
+        >
           <span
             class="hover:text-yellow-200 transition duration-300 hover:scale-110"
           >
-            Afficher plus de catégorie</span
-          >
+            Afficher plus de catégorie
+          </span>
         </button>
       </div>
     </div>
   </section>
 </template>
+
 <script setup>
 import pub1 from "../assets/img/a1.png";
 import pub2 from "../assets/img/a2.png";
@@ -170,38 +178,41 @@ const episodes = ref([
 ]);
 </script>
 
-
 <style scoped>
-.container {
-  max-width: 640px; /* Limite la largeur pour la responsivité */
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
+/* Responsive grid */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* Full-width for mobile */
   }
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  h2 {
-    font-size: 1.25rem;
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
   }
-  .music-card {
-    flex-direction: column;
-    text-align: center;
-  }
-  .music-card img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-  .music-card .stats {
-    justify-content: center;
-  }
+}
+
+/* Carte à droite avec un bouton */
+.relative {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+button {
+  width: 100%;
+  margin-top: 1rem; /* espace entre la carte et le bouton */
+}
+
+/* Flexibilité de la carte à droite */
+.relative .flex-1 {
+  flex: 1 1 90%; /* 90% de la hauteur pour la carte */
+}
+
+/* Card Alignments */
+h2,
+p {
+  text-align: center;
 }
 </style>
