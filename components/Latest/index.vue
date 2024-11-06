@@ -122,9 +122,16 @@
       <!-- View More Button -->
       <div class="mt-6 text-center">
         <button
-          class="bg-black text-yellow-300 px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base hover:bg-gray-800 transition duration-300"
+          class="relative inline-block px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base font-semibold text-yellow-400 bg-black border-2 border-black overflow-hidden group"
         >
-          Voir plus des singles
+          <span
+            class="relative z-10 transition-all duration-300 ease-in-out group-hover:text-black group-hover:translate-x-0 transform translate-x-full"
+          >
+            Voir plus des singles
+          </span>
+          <div
+            class="absolute inset-0 w-full h-full bg-yellow-300 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
+          ></div>
         </button>
       </div>
     </div>
