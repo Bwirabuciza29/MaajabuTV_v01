@@ -92,6 +92,9 @@
     <div>
       <albums />
     </div>
+    <div>
+      <subscription />
+    </div>
   </div>
 </template>
 
