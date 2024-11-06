@@ -79,7 +79,24 @@
       </div>
     </div>
     <!-- Latest Section -->
-    <Latest />
+    <div>
+      <Latest />
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo
+      pariatur labore voluptatum quam officia accusantium! Quas, ex qui
+      distinctio aspernatur, iure sed laboriosam similique nemo tenetur placeat
+      excepturi rerum.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Vitae nemo pariatur labore voluptatum quam officia accusantium! Quas, ex
+      qui distinctio aspernatur, iure sed laboriosam similique nemo tenetur
+      placeat excepturi rerum.Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Vitae nemo pariatur labore voluptatum quam officia accusantium!
+      Quas, ex qui distinctio aspernatur, iure sed laboriosam similique nemo
+      tenetur placeat excepturi rerum.Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Vitae nemo pariatur labore voluptatum quam officia
+      accusantium! Quas, ex qui distinctio aspernatur, iure sed laboriosam
+      similique nemo tenetur placeat excepturi rerum.
+    </div>
   </div>
 </template>
 
