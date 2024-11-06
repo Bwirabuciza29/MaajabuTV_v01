@@ -90,7 +90,7 @@
       <brands />
     </div>
     <div>
-      <champs />
+      <albums />
     </div>
   </div>
 </template>

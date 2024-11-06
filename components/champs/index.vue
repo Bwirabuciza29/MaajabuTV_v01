@@ -2,9 +2,7 @@
   <section class="bg-white px-10 py-6 max-w-6xl mx-auto w-full">
     <div class="bg-white max-w-6xl mx-4 sm:mx-2 py-6 px-4">
       <!-- Section Header -->
-      <div
-        class="flex items-center justify-between border-b border-gray-200 py-4"
-      >
+      <div class="flex items-center justify-between border-gray-200 py-4">
         <div
           class="w-1/3 sm:w-[35%] border-t border-gray-300 ml-4 mr-1 hidden sm:block"
         ></div>
