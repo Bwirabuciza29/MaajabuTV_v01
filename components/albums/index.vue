@@ -34,7 +34,7 @@
             </div>
             <div>
               <button
-                class="mt-3 bg-black text-yellow-500 px-3 py-1.5 w-full text-sm hover:bg-yellow-500 hover:text-black hover:text-base transform transition duration-300 ease-in-out"
+                class="mt-3 bg-black text-yellow-500 px-3 py-1.5 w-full text-sm"
               >
                 FOLLOWED
               </button>
@@ -55,7 +55,7 @@
             </div>
             <div>
               <button
-                class="mt-3 bg-white border border-black text-black px-3 py-1.5 w-full text-sm hover:bg-black hover:text-white hover:text-base transform transition duration-300 ease-in-out"
+                class="mt-3 bg-white border border-black text-black px-3 py-1.5 w-full text-sm"
               >
                 FOLLOW
               </button>
@@ -76,7 +76,7 @@
             </div>
             <div>
               <button
-                class="mt-3 bg-white border border-black text-black px-3 py-1.5 w-full text-sm hover:bg-black hover:text-white hover:text-base transform transition duration-300 ease-in-out"
+                class="mt-3 bg-white border border-black text-black px-3 py-1.5 w-full text-sm"
               >
                 FOLLOW
               </button>
@@ -85,20 +85,19 @@
         </div>
 
         <!-- Description & Navigation Section -->
-        <div class="flex flex-col justify-center text-center ml-4">
+        <!-- Description & Navigation Section -->
+        <div class="flex flex-col justify-center text-center mt-8 sm:mt-0">
           <h2 class="text-2xl font-bold text-yellow-600">Top Albums</h2>
           <div class="text-black mt-2 space-y-1">
             <p>Here are the podcasters</p>
-
             <p>with the highest followers</p>
-
             <p>and viewers. Immediately follow</p>
             <p>to follow the podcast</p>
           </div>
-          <div class="mt-36 flex items-center gap-2 justify-center flex-wrap">
-            <!-- Trois petites images ajoutées avant les boutons -->
 
-            <!-- Boutons de navigation -->
+          <!-- Navigation Section -->
+          <div class="mt-8 flex items-center gap-4 justify-center">
+            <!-- Flèche gauche -->
             <button
               class="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 bg-gray-200 flex items-center justify-center object-cover transition-all duration-300 hover:scale-110 hover:z-10 hover:shadow-lg"
             >
@@ -109,6 +108,7 @@
               />
             </button>
 
+            <!-- Flèche droite -->
             <button
               class="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 bg-yellow-500 flex items-center justify-center object-cover transition-all duration-300 hover:scale-110 hover:z-10 hover:shadow-lg"
             >

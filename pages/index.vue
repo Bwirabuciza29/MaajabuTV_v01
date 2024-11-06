@@ -79,10 +79,10 @@
       </div>
     </div>
     <!-- Latest Section -->
-    <div>
+    <div class="rm-wrapper">
       <Latest />
     </div>
-    <div>
+    <div class="rm-wrapper">
       <champs />
     </div>
 

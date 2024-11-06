@@ -1,150 +1,152 @@
 <template>
-  <section
-    class="bg-white shadow-md px-10 py-6 max-w-6xl mx-auto w-full relative z-10 -mt-12 sm:-mt-16 lg:-mt-20"
-  >
-    <div class="bg-white max-w-6xl mx-4 sm:mx-2 py-6 px-4">
-      <!-- Section Header -->
-      <div
-        class="flex items-center justify-between border-b border-gray-200 py-4"
-      >
-        <h2
-          class="text-xl sm:text-2xl font-bold text-yellow-500 transform transition duration-200 hover:scale-105"
-        >
-          Latest Music
-        </h2>
-
-        <!-- Ligne séparatrice centrée avec décalage vers le bouton -->
+  <div class="rm-container" id="rm-latest">
+    <div
+      class="bg-white shadow-md px-10 py-6 max-w-6xl mx-auto w-full relative z-10 -mt-12 sm:-mt-16 lg:-mt-20"
+    >
+      <div class="bg-white max-w-6xl mx-4 sm:mx-2 py-6 px-4">
+        <!-- Section Header -->
         <div
-          class="w-1/3 sm:w-[35%] border-t border-gray-300 ml-4 mr-1 hidden sm:block"
-        ></div>
-
-        <button
-          class="border border-yellow-400 text-yellow-500 px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm font-medium hover:bg-yellow-50 transform transition duration-200 hover:scale-105"
+          class="flex items-center justify-between border-b border-gray-200 py-4"
         >
-          Voir Tout
-        </button>
-      </div>
-
-      <!-- Fin Section Header -->
-
-      <!-- Liste des cards -->
-      <div class="py-6 space-y-8">
-        <div
-          v-for="episode in episodes"
-          :key="episode.id"
-          class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-4 border-b pb-4"
-        >
-          <!-- Image de l'album -->
-          <img
-            :src="episode.image"
-            alt="Album cover"
-            class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-cover transition-transform duration-300 hover:scale-105"
-          />
-
-          <!-- Informations de l'épisode -->
-          <div class="flex-1">
-            <!-- Conteneur avec hover global sur tout le texte -->
-            <div
-              class="text-xs sm:text-sm text-gray-500 flex flex-wrap items-center space-x-1 hover:text-yellow-500 hover:underline hover:translate-y-[-3px] transition-all duration-300"
-            >
-              <span>{{ episode.artist }}</span>
-              <span class="mx-1 hidden sm:inline">•</span>
-              <span>{{ episode.duration }}</span>
-              <span class="mx-1 hidden sm:inline">•</span>
-              <span>Episode {{ episode.episode }}</span>
-            </div>
-
-            <!-- Titre -->
-            <h3
-              class="text-base sm:text-lg font-semibold mt-1 hover:text-yellow-500 hover:underline hover:translate-y-[-3px] transition-all duration-300"
-            >
-              {{ episode.title }}
-            </h3>
-
-            <!-- Description -->
-            <p
-              class="text-gray-600 mt-1 text-xs sm:text-sm hover:text-yellow-500 hover:underline hover:translate-y-[-3px] transition-all duration-300"
-            >
-              {{ episode.description }}
-            </p>
-
-            <!-- Statistiques de l'épisode -->
-            <div
-              class="flex flex-wrap items-center space-x-3 text-gray-400 mt-3"
-            >
-              <div class="flex items-center space-x-1 sm:space-x-2">
-                <img
-                  src="assets/img/icons/Headphones.svg"
-                  alt="Headphones"
-                  class="w-4 h-4 sm:w-5 sm:h-5"
-                />
-                <span class="text-xs sm:text-sm">{{
-                  episode.stats.listen
-                }}</span>
-              </div>
-              <div class="flex items-center space-x-1 sm:space-x-2">
-                <img
-                  src="assets/img/icons/fi_heart.svg"
-                  alt="heart"
-                  class="w-4 h-4 sm:w-5 sm:h-5"
-                />
-                <span class="text-xs sm:text-sm">{{
-                  episode.stats.likes
-                }}</span>
-              </div>
-              <div class="flex items-center space-x-1 sm:space-x-2">
-                <img
-                  src="assets/img/icons/Chat.svg"
-                  alt="comment"
-                  class="w-4 h-4 sm:w-5 sm:h-5"
-                />
-                <span class="text-xs sm:text-sm">{{
-                  episode.stats.comments
-                }}</span>
-              </div>
-              <div class="flex items-center space-x-1 sm:space-x-2">
-                <img
-                  src="assets/img/icons/fi_download.svg"
-                  alt="download"
-                  class="w-4 h-4 sm:w-5 sm:h-5"
-                />
-                <span class="text-xs sm:text-sm">{{
-                  episode.stats.downloads
-                }}</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bouton Lecture centré en dessous -->
-          <button
-            class="flex self-center items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-gray-200 rounded-full mt-10 hover:bg-yellow-300 hover:scale-105 transition-colors duration-300 ease-in-out"
+          <h2
+            class="text-xl sm:text-2xl font-bold text-yellow-500 transform transition duration-200 hover:scale-105"
           >
+            Latest Music
+          </h2>
+
+          <!-- Ligne séparatrice centrée avec décalage vers le bouton -->
+          <div
+            class="w-1/3 sm:w-[35%] border-t border-gray-300 ml-4 mr-1 hidden sm:block"
+          ></div>
+
+          <button
+            class="border border-yellow-400 text-yellow-500 px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm font-medium hover:bg-yellow-50 transform transition duration-200 hover:scale-105"
+          >
+            Voir Tout
+          </button>
+        </div>
+
+        <!-- Fin Section Header -->
+
+        <!-- Liste des cards -->
+        <div class="py-6 space-y-8">
+          <div
+            v-for="episode in episodes"
+            :key="episode.id"
+            class="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-4 border-b pb-4"
+          >
+            <!-- Image de l'album -->
             <img
-              src="assets/img/frame 4.png"
-              alt="Play icon"
-              class="w-6 h-6 sm:w-8 sm:h-8"
+              :src="episode.image"
+              alt="Album cover"
+              class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-cover transition-transform duration-300 hover:scale-105"
             />
+
+            <!-- Informations de l'épisode -->
+            <div class="flex-1">
+              <!-- Conteneur avec hover global sur tout le texte -->
+              <div
+                class="text-xs sm:text-sm text-gray-500 flex flex-wrap items-center space-x-1 hover:text-yellow-500 hover:underline hover:translate-y-[-3px] transition-all duration-300"
+              >
+                <span>{{ episode.artist }}</span>
+                <span class="mx-1 hidden sm:inline">•</span>
+                <span>{{ episode.duration }}</span>
+                <span class="mx-1 hidden sm:inline">•</span>
+                <span>Episode {{ episode.episode }}</span>
+              </div>
+
+              <!-- Titre -->
+              <h3
+                class="text-base sm:text-lg font-semibold mt-1 hover:text-yellow-500 hover:underline hover:translate-y-[-3px] transition-all duration-300"
+              >
+                {{ episode.title }}
+              </h3>
+
+              <!-- Description -->
+              <p
+                class="text-gray-600 mt-1 text-xs sm:text-sm hover:text-yellow-500 hover:underline hover:translate-y-[-3px] transition-all duration-300"
+              >
+                {{ episode.description }}
+              </p>
+
+              <!-- Statistiques de l'épisode -->
+              <div
+                class="flex flex-wrap items-center space-x-3 text-gray-400 mt-3"
+              >
+                <div class="flex items-center space-x-1 sm:space-x-2">
+                  <img
+                    src="assets/img/icons/Headphones.svg"
+                    alt="Headphones"
+                    class="w-4 h-4 sm:w-5 sm:h-5"
+                  />
+                  <span class="text-xs sm:text-sm">{{
+                    episode.stats.listen
+                  }}</span>
+                </div>
+                <div class="flex items-center space-x-1 sm:space-x-2">
+                  <img
+                    src="assets/img/icons/fi_heart.svg"
+                    alt="heart"
+                    class="w-4 h-4 sm:w-5 sm:h-5"
+                  />
+                  <span class="text-xs sm:text-sm">{{
+                    episode.stats.likes
+                  }}</span>
+                </div>
+                <div class="flex items-center space-x-1 sm:space-x-2">
+                  <img
+                    src="assets/img/icons/Chat.svg"
+                    alt="comment"
+                    class="w-4 h-4 sm:w-5 sm:h-5"
+                  />
+                  <span class="text-xs sm:text-sm">{{
+                    episode.stats.comments
+                  }}</span>
+                </div>
+                <div class="flex items-center space-x-1 sm:space-x-2">
+                  <img
+                    src="assets/img/icons/fi_download.svg"
+                    alt="download"
+                    class="w-4 h-4 sm:w-5 sm:h-5"
+                  />
+                  <span class="text-xs sm:text-sm">{{
+                    episode.stats.downloads
+                  }}</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bouton Lecture centré en dessous -->
+            <button
+              class="flex self-center items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-gray-100 rounded-full mt-10 hover:bg-yellow-300 hover:scale-105 transition-colors duration-300 ease-in-out"
+            >
+              <img
+                src="assets/img/frame 4.png"
+                alt="Play icon"
+                class="w-6 h-6 sm:w-8 sm:h-8"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="mt-6 text-center">
+          <button
+            class="relative inline-block px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base font-semibold text-yellow-400 bg-black border-2 border-black overflow-hidden group"
+          >
+            <span
+              class="relative z-10 transition-all duration-300 ease-in-out group-hover:text-black group-hover:translate-x-0 transform translate-x-full"
+            >
+              Voir plus des singles
+            </span>
+            <div
+              class="absolute inset-0 w-full h-full bg-yellow-300 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
+            ></div>
           </button>
         </div>
       </div>
-
-      <!-- View More Button -->
-      <div class="mt-6 text-center">
-        <button
-          class="relative inline-block px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base font-semibold text-yellow-400 bg-black border-2 border-black overflow-hidden group"
-        >
-          <span
-            class="relative z-10 transition-all duration-300 ease-in-out group-hover:text-black group-hover:translate-x-0 transform translate-x-full"
-          >
-            Voir plus des singles
-          </span>
-          <div
-            class="absolute inset-0 w-full h-full bg-yellow-300 transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
-          ></div>
-        </button>
-      </div>
     </div>
-  </section>
+  </div>
 </template>
 <script setup>
 import pub1 from "../assets/img/a1.png";
